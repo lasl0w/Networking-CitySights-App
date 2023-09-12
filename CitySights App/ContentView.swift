@@ -13,12 +13,16 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-            TextField("What're you looking for?", text: $query)
+            TextField("Look up a restaurant", text: $query)
                 .textFieldStyle(.roundedBorder)
             Button {
                 // TODO: Implement query
             } label: {
                 Text("Go")
+                    .padding()
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
 
         }
