@@ -26,6 +26,10 @@ struct ContentView: View {
             }
         }
         .padding()
+        .onAppear(perform: {
+            // Infodictionary is optional
+            print(Bundle.main.infoDictionary!["API_KEY"] as? String)
+        })
     }
 }
 
