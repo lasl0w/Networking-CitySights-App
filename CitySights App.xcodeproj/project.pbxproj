@@ -11,6 +11,7 @@
 		834B48312AB0E1BB004E8B3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B48302AB0E1BB004E8B3F /* ContentView.swift */; };
 		834B48332AB0E1BC004E8B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B48322AB0E1BC004E8B3F /* Assets.xcassets */; };
 		834B48362AB0E1BC004E8B3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B48352AB0E1BC004E8B3F /* Preview Assets.xcassets */; };
+		F1E4549A2C818240004A1092 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E454992C818240004A1092 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		834B48302AB0E1BB004E8B3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		834B48322AB0E1BC004E8B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834B48352AB0E1BC004E8B3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1E454992C818240004A1092 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8313D5912ABC951700C28D8B /* Config.xcconfig */,
 				834B48322AB0E1BC004E8B3F /* Assets.xcassets */,
 				834B48342AB0E1BC004E8B3F /* Preview Content */,
+				F1E454992C818240004A1092 /* DataService.swift */,
 			);
 			path = "CitySights App";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E4549A2C818240004A1092 /* DataService.swift in Sources */,
 				834B48312AB0E1BB004E8B3F /* ContentView.swift in Sources */,
 				834B482F2AB0E1BB004E8B3F /* CitySights_AppApp.swift in Sources */,
 			);
