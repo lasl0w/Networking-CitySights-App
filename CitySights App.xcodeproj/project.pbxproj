@@ -58,10 +58,10 @@
 				8313D5922ABC965000C28D8B /* CitySights-App-Info.plist */,
 				834B482E2AB0E1BB004E8B3F /* CitySights_AppApp.swift */,
 				834B48302AB0E1BB004E8B3F /* ContentView.swift */,
+				F1E454992C818240004A1092 /* DataService.swift */,
 				8313D5912ABC951700C28D8B /* Config.xcconfig */,
 				834B48322AB0E1BC004E8B3F /* Assets.xcassets */,
 				834B48342AB0E1BC004E8B3F /* Preview Content */,
-				F1E454992C818240004A1092 /* DataService.swift */,
 			);
 			path = "CitySights App";
 			sourceTree = "<group>";

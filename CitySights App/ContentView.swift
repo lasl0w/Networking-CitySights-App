@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var query: String = ""
+    var service = DataService()
     
     var body: some View {
         HStack {
@@ -29,7 +30,12 @@ struct ContentView: View {
         .onAppear(perform: {
             // Infodictionary is optional
             print(Bundle.main.infoDictionary!["API_KEY"] as? String)
+           
         })
+        .task {
+            // Call yelp service - not passing any params yet
+            await service.businessSearch()
+        }
     }
 }
 
