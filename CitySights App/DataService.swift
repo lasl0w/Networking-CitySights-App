@@ -49,7 +49,8 @@ struct DataService {
             }
           
         }
-        
+        // No valid URL, return an empty array
+        return [Business]()
 
     }
     
