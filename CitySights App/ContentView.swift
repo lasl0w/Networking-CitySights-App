@@ -34,7 +34,7 @@ struct ContentView: View {
         })
         .task {
             // Call yelp service - not passing any params yet
-            await service.businessSearch()
+            let businesses = await service.businessSearch()
         }
     }
 }
