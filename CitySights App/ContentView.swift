@@ -9,21 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var businesses = [Business]()
     @State var query: String = ""
     var service = DataService()
     
     var body: some View {
-        HStack {
-            TextField("What are you looking for?", text: $query)
-            Button {
-                // TODO: Implement query
-            } label: {
-                Text("Go")
-                    .padding(.horizontal)
-                    .padding(.vertical, 10)
-                    .background(.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+        VStack {
+            HStack {
+                TextField("What are you looking for?", text: $query)
+                Button {
+                    // TODO: Implement query
+                } label: {
+                    Text("Go")
+                        .padding(.horizontal)
+                        .padding(.vertical, 10)
+                        .background(.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
+            List (businesses) { b in
+                Text(b.name ?? "No name found")
             }
         }
         .padding()
@@ -34,7 +40,7 @@ struct ContentView: View {
         })
         .task {
             // Call yelp service - not passing any params yet
-            let businesses = await service.businessSearch()
+            businesses = await service.businessSearch()
         }
     }
 }

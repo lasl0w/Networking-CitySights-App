@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
-struct Business: Decodable {
+// Identifiable so we can use it in a list
+struct Business: Decodable, Identifiable {
     // declaring most as optional b/c we don't know what they will give us back
     var id: String?
     var alias: String?
