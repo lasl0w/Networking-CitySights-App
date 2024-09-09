@@ -13,19 +13,39 @@ struct Business: Decodable, Identifiable {
     var alias: String?
     var categories: [Category]
     var coordinates: Coordinate
-    var display_phone: String?
+    var displayPhone: String?
     var distance: Double?
-    var image_url: String?
-    var is_closed: Bool?
+    var imageURL: String?
+    var isClosed: Bool?
     var location: Location?
     var name: String?
     var phone: String?
     var price: String?
     var rating: Double?
-    var review_count: Int?
+    var reviewCount: Int?
     var url: String?
-    
     // only add the props we need
+    
+    enum CodingKeys: String, CodingKey {
+        // map the Yelp API name to our desired name
+        case displayPhone = "display_phone"
+        case isClosed = "is_closed"
+        case imageURL = "image_url"
+        case reviewCount = "review_count"
+        
+        case id
+        case alias
+        case categories
+        case coordinates
+        case distance
+        case location
+        case name
+        case phone
+        case price
+        case rating
+        case url
+        
+    }
 }
 struct Category: Decodable {
     var alias: String?
@@ -38,5 +58,20 @@ struct Location: Decodable {
     var address3: String?
     var city: String?
     var country: String?
-    var display_address: [String]?
+    var displayAddress: [String]?
+    var state: String?
+    var zipCode: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case displayAddress = "display_address"
+        case zipCode = "zip_code"
+        
+        case address1
+        case address2
+        case address3
+        case city
+        case country
+        case state
+    }
+    
 }
